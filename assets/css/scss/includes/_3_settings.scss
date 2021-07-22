@@ -62,10 +62,6 @@ body {
         }
     }
 }
-.container {
-    position: relative;
-    z-index: 2;
-}
 
 .overlay {
     position: absolute;
@@ -113,6 +109,36 @@ main.single {
             padding: 30px;
             border-radius: 10px;
             margin-bottom: 25px;
+        }
+    }
+}
+header {
+    .dropdown {
+        position: relative;
+        &:hover {
+            .dropdown-menu {
+                display: block;
+            }
+        }
+    }
+    .nav-item {
+        .nav-link {
+            i {
+                font-size: 12px;
+            }
+        }
+        .dropdown-toggle::after {
+            display: none;
+        }
+    }
+}
+
+ul.pagination {
+    .page-link {
+        color: #444;
+        &:focus {
+            outline: none;
+            box-shadow: none;
         }
     }
 }

@@ -123,11 +123,6 @@ body .support:hover .hiddenPart {
   display: block;
 }
 
-.container {
-  position: relative;
-  z-index: 2;
-}
-
 .overlay {
   position: absolute;
   content: "";
@@ -178,6 +173,32 @@ main.single {
   padding: 30px;
   border-radius: 10px;
   margin-bottom: 25px;
+}
+
+header .dropdown {
+  position: relative;
+}
+
+header .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+header .nav-item .nav-link i {
+  font-size: 12px;
+}
+
+header .nav-item .dropdown-toggle::after {
+  display: none;
+}
+
+ul.pagination .page-link {
+  color: #444;
+}
+
+ul.pagination .page-link:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .title {
